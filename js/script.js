@@ -4,7 +4,7 @@ var sf = new Snowflakes({
 });
 var url_string = window.location.href; //window.location.href
 var url = new URL(url_string);
-var c = url.searchParams.get("name");
+var c = url.searchParams.get("name") || "Srijita";
 console.log(c);
 if (c != null) {
     document.getElementById("name").innerHTML = c;
